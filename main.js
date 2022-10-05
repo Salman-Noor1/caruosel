@@ -27,3 +27,20 @@ rightBtn.addEventListener('click',()=>{
     index++;
     changeSlide()
 })
+
+// menu bar
+
+const mobileMenu = document.getElementById("mobile-menu")
+const showBtn = document.getElementById("showBtn")
+const hideBtn = document.getElementById("hideBtn")
+
+function showMenu() {
+    mobileMenu.style.display = "block"
+}
+
+function hideMenu() {
+    mobileMenu.style.display = "none"
+}
+
+showBtn.addEventListener('click',()=>{showMenu()})
+hideBtn.addEventListener('click',()=>{hideMenu()})

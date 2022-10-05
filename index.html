@@ -8,10 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="b-gray-50">
-    <!-- Section 1 -->
-    <div class="bg-black h-10 w-full text-white text-sm text-white font-semibold flex justify-between items-center px-6">
+
+    <nav id="mobile-menu" class="fixed text-white ease-in-out duration-500 top-0 left-0 p-4 bg-black w-[100vw] h-[100vh] z-10">
+        <div id="hideBtn" class="w-full cursor-pointer flex justify-end">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-white font-bold">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>              
+        </div>
+        <div class="w-full h-[90vh] grid place-content-center mx-auto text-center">
+            <p class="font-bold uppercase mx-auto my-8">menu</p>
+            <ul class="text-center text-4xl space-y-4">
+                <li><a href=""class="hover:text-blue-500">Home page</a></li>
+                <li><a href=""class="hover:text-blue-500">Simple post</a></li>
+                <li><a href=""class="hover:text-blue-500">About us</a></li>
+                <li><a href=""class="hover:text-blue-500">Blog</a></li>
+            </ul>
+
+            <div class="flex space-x-2 justify-center my-12">
+                <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+            </div>
+        </div>
+    </nav>
+        <!-- Section 1 -->
+    <div class="bg-black h-10 w-full text-white text-sm text-white font-semibold flex justify-between items-center p-4 md:px-8">
         <h3>Magazine and newspaper with news around the world</h3>
-        <div class="space-x-6">
+        <div class="hidden md:block space-x-6">
             <a href="" class="hover:text-blue-500 text xl">Contact</a>
             <a href="" class="hover:text-blue-500 text xl">Privacy Policy</a>
         </div>
@@ -19,37 +43,33 @@
     <!-- End of Section 1 -->
 
     <!-- Section 2 -->
-    <div class="bg-gray-50 flex w-full h-20 items-center justify-between px-6">
+    <div class="bg-gray-50 flex w-full h-20 items-center justify-between p-4 md:px-8">
             <h1 class="capitalize font-black text-3xl">newspaper.</h1>
-        <div class="space-x-8 text-lg">
+        <nav class="hidden md:block space-x-8 text-lg">
             <a href=""class="hover:text-blue-500 text-lg">Home page</a>
             <a href=""class="hover:text-blue-500 text-lg">Simple post</a>
             <a href=""class="hover:text-blue-500 text-lg">About us</a>
             <a href=""class="hover:text-blue-500 text-lg">Blog</a>
+        </nav>
+        <!-- social links -->
+        <div class="hidden md:flex space-x-4">
+            <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+            <svg class="w-4 h-4 hover:text-[#e09d37] ease-in-out duration-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
         </div>
-        <div class="flex space-x-4">
-            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                <path d="M15.9999 7.00005C15.9999 6.44776 16.4477 6.00005 16.9999 6.00005C17.5522 6.00005 17.9999 6.44776 17.9999 7.00005C17.9999 7.55233 17.5522 8.00005 16.9999 8.00005C16.4477 8.00005 15.9999 7.55233 15.9999 7.00005Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 7.25005C9.37659 7.25005 7.24994 9.37669 7.24994 12C7.24994 14.6234 9.37659 16.75 11.9999 16.75C14.6233 16.75 16.7499 14.6234 16.7499 12C16.7499 9.37669 14.6233 7.25005 11.9999 7.25005ZM8.74994 12C8.74994 10.2051 10.205 8.75005 11.9999 8.75005C13.7949 8.75005 15.2499 10.2051 15.2499 12C15.2499 13.795 13.7949 15.25 11.9999 15.25C10.205 15.25 8.74994 13.795 8.74994 12Z" fill="black"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2582 2.83306C13.7916 2.44562 10.2083 2.44562 6.74171 2.83306C4.72965 3.05794 3.10532 4.64295 2.86876 6.66548C2.45423 10.2098 2.45423 13.7903 2.86876 17.3346C3.10532 19.3571 4.72965 20.9422 6.74171 21.167C10.2083 21.5545 13.7916 21.5545 17.2582 21.167C19.2702 20.9422 20.8946 19.3571 21.1311 17.3346C21.5457 13.7903 21.5457 10.2098 21.1311 6.66548C20.8946 4.64295 19.2703 3.05794 17.2582 2.83306ZM6.90832 4.32378C10.2642 3.94871 13.7357 3.94871 17.0916 4.32378C18.4217 4.47244 19.4872 5.52205 19.6413 6.83973C20.0423 10.2683 20.0423 13.7318 19.6413 17.1604C19.4872 18.478 18.4217 19.5277 17.0916 19.6763C13.7357 20.0514 10.2642 20.0514 6.90832 19.6763C5.57821 19.5277 4.51272 18.478 4.35861 17.1604C3.95761 13.7318 3.95761 10.2683 4.35861 6.83973C4.51272 5.52205 5.57821 4.47244 6.90832 4.32378Z" fill="black"/>
-            </svg>
-            <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M15.1742424,5.3203125 L17,5.3203125 L17,2.140625 C16.6856061,2.09765625 15.6022727,2 14.3409091,2 C11.7083333,2 9.90530303,3.65625 9.90530303,6.69921875 L9.90530303,9.5 L7,9.5 L7,13.0546875 L9.90530303,13.0546875 L9.90530303,22 L13.4659091,22 L13.4659091,13.0546875 L16.2537879,13.0546875 L16.6969697,9.5 L13.4659091,9.5 L13.4659091,7.05078125 C13.4659091,6.0234375 13.7424242,5.3203125 15.1742424,5.3203125 Z"/>
-              </svg>
-            <svg width="24px" height="24px" viewBox="-2 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-linkedin">
-                <path d='M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z' />
-            </svg> 
-            <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
-                <path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"/>
-            </svg>
-        </div>
+        <svg id="showBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+          
     </div>
     <!-- End of Section 2 -->
 
     <!-- Section 3 -->
-    <div class="w-full h-[26rem] overflow-hidden bg-red-100 mt-5 relative">
+    <!-- image carousel -->
+    <div class="w-full h-[28rem] md:h-[26rem] overflow-hidden bg-red-100 mt-5 relative">
         
-        <div class="w-full p-8 flex justify-between items-center h-full absolute z-10">
+        <div class="w-full p-8 md:flex justify-between hidden items-center h-full absolute z-10">
             <div id="left" class="p-2 hover:bg-black cursor-pointer rounded-full ease-in-out duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-white">
                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z" clip-rule="evenodd" />
@@ -63,39 +83,40 @@
               
               
         </div>
-        <div id="container" class="w-[100vw] h-full flex -translate-x-[000vw]">
-            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p1.jpg')] bg-cover bg-center p-20 bg-green-200 flex items-end">
-                <div class="w-2/5 mx-20 space-y-4">
+        <div id="container" class="w-[100vw] h-full flex ease-in-out duration-500">
+            
+            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p1.jpg')] bg-cover bg-center p-4 pb-20 md:p-20 bg-green-200 flex items-end">
+                <div class="w-full md:w-2/5 mx-4 md:mx-20 space-y-4">
                     <h1 class="text-5xl text-white">Our company in significant numbers</h1>
                     <p class="text-white text-lg">We focus on and take care of the development of our articles,taking care of the...</p>
                 </div>
             </div>
-            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p2.jpg')] bg-cover bg-center p-20 bg-green-200 flex items-end">
-                <div class="w-2/5 mx-20 space-y-4">
+            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p2.jpg')] bg-cover bg-center p-4 pb-20 md:p-20 bg-green-200 flex items-end">
+                <div class="w-full md:w-2/5 mx-4 md:mx-20 space-y-4">
                     <h1 class="text-5xl text-white">Our company in significant numbers</h1>
                     <p class="text-white text-lg">We focus on and take care of the development of our articles,taking care of the...</p>
                 </div>
             </div>
-            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p3.jpg')] bg-cover bg-center p-20 bg-green-200 flex items-end">
-                <div class="w-2/5 mx-20 space-y-4">
+            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p3.jpg')] bg-cover bg-center p-4 pb-20 md:p-20 bg-green-200 flex items-end">
+                <div class="w-full md:w-2/5 mx-4 md:mx-20 space-y-4">
                     <h1 class="text-5xl text-white">Our company in significant numbers</h1>
                     <p class="text-white text-lg">We focus on and take care of the development of our articles,taking care of the...</p>
                 </div>
             </div>
-            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p4.jpg')] bg-cover bg-center p-20 bg-green-200 flex items-end">
-                <div class="w-2/5 mx-20 space-y-4">
+            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p4.jpg')] bg-cover bg-center p-4 pb-20 md:p-20 bg-green-200 flex items-end">
+                <div class="w-full md:w-2/5 mx-4 md:mx-20 space-y-4">
                     <h1 class="text-5xl text-white">Our company in significant numbers</h1>
                     <p class="text-white text-lg">We focus on and take care of the development of our articles,taking care of the...</p>
                 </div>
             </div>
-            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p5.jpg')] bg-cover bg-center p-20 bg-green-200 flex items-end">
-                <div class="w-2/5 mx-20 space-y-4">
+            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p5.jpg')] bg-cover bg-center p-4 pb-20 md:p-20 bg-green-200 flex items-end">
+                <div class="w-full md:w-2/5 mx-4 md:mx-20 space-y-4">
                     <h1 class="text-5xl text-white">Our company in significant numbers</h1>
                     <p class="text-white text-lg">We focus on and take care of the development of our articles,taking care of the...</p>
                 </div>
             </div>
-            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p6.jpg')] bg-cover bg-center p-20 bg-green-200 flex items-end">
-                <div class="w-2/5 mx-20 space-y-4">
+            <div class="slide w-[100vw] flex-shrink-0 h-full bg-[url('photos/p6.jpg')] bg-cover bg-center p-4 pb-20 md:p-20 bg-green-200 flex items-end">
+                <div class="w-full md:w-2/5 mx-4 md:mx-20 space-y-4">
                     <h1 class="text-5xl text-white">Our company in significant numbers</h1>
                     <p class="text-white text-lg">We focus on and take care of the development of our articles,taking care of the...</p>
                 </div>
@@ -105,13 +126,11 @@
     </div>
     <!-- End of Section 3 -->
 
-
     <!-- Section 4 -->
-        
     <main class="h-max">
-        <div class="w-full h-full flex px-4 mt-12 mb-16">
+        <div class="w-full h-full md:flex space-y-12 md:space-y-0 md:flex px-4 mt-12 mb-16">
             
-            <div class="w-[28%] border-r-2 border-gray-800 px-4">
+            <div class="w-full md:w-[28%] md:border-r-2 border-gray-800 md:pr-8">
                 <h5 class="text-lg font-bold pb-5 border-b-2 border-gray-800">Fashion Category</h5>
                 
                 <article class="my-8 space-y-4">
@@ -149,8 +168,8 @@
                 </article>
 
             </div>
-            <div class="w-[42%] h-full px-8 border-r-2 border-gray-800">
-                <div class="px-8 mb-8">
+            <div class="w-full md:w-[42%] h-full md:border-r-2 border-gray-800">
+                <div class="md:px-8 mb-8">
                     <h5 class="text-lg font-bold pb-5">Modern post</h5>
                     <p>In this section you will find all the latest articles added by our blog specialists. We invite you to read.</p>
                     <div class="space-y-8">
@@ -202,7 +221,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="w-full p-8 bg-gray-100 space-y-6">
+                <div class="w-full md:p-8 bg-gray-100 space-y-6">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                     </svg>                          
@@ -211,7 +230,7 @@
                     <p>Visit our website every day and it will certainly be a useful and pleasant time for you. Use the navigation to find the articles.</p>
                 </div>
             </div>
-            <aside class="w-[30%] h-full pl-8 pr-6">
+            <aside class="w-full md:w-[30%] h-full md:pl-8 md:pr-6">
                 <h3 class="text-lg">Newspaper from scratch</h3>
                 <h1 class="my-4 font-medium text-4xl">Our company creates with a hobby</h1>
                 <h4 class="text-lg my-2 font-bold">Employed people</h4>
@@ -257,11 +276,10 @@
     </main>
     <!-- End of Section 4 -->
 
-
     <!-- Section 5 -->
-    <footer class="bg-black pt-12 text-white space-y-4 p-6 w-full">
-        <div class="w-full flex p-4 space-x-10">
-            <div class="flex-1 h-full space-y-4">
+    <footer class="bg-black py-8 md:py-12 text-white space-y-4 md:p-6 w-full">
+        <div class="w-full md:flex p-4 md:space-x-10">
+            <div class="flex-1 space-y-4 p-4">
                 <h2 class="font-semibold text-3xl mb-8">Newspaper.</h2>
                 <p class="text-medium text-gray-50">Daily newspaper magazine with interesting scientific articles and guides on modern technology and fashion.</p>
                 <a href="/" class="text-[#e09d37] hover:text-white ease-in-out duration-500 flex mt-10 items-center">
@@ -272,7 +290,7 @@
                 </a>
                 
             </div>
-            <div class="flex-1 h-full p-4">
+            <div class="flex-1 p-2 md:p-4">
                 <h3 class="text-2xl pb-5 border-b-2 border-white">Company</h3>
                 <ul class="my-4 font-normal text-md text-gray-300">
                     <li>
@@ -292,7 +310,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex-1 h-full p-4">
+            <div class="flex-1 p-2 md:p-4">
                 <h3 class="text-2xl pb-5 border-b-2 border-white">Categories</h3>
                 <ul class="my-4 font-normal text-md text-gray-300">
                     <li>
@@ -311,19 +329,20 @@
             </div>
             
         </div>
-        <div class="w-full text-gray-200 text-sm flex justify-between p-4">
-            <div class="flex">
+        <div class="w-full text-gray-200 text-sm text-center md:flex md:justify-between p-4">
+            <div class="flex justify-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15" fill="currentColor" class="pr-1 w-4 h-4 text-[#e09d37]">
                     <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                     <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                 </svg> 
-                <span class="hover:text-[#e09d37] ease-in-out duration-500">salman@gmail.com</span>                 
+                <span class="text-center hover:text-[#e09d37] ease-in-out duration-500">salman@gmail.com</span>                 
             </div>
             <p>Copyright © 2021 Newspaper Magazine. All right reserved.</p>
         </div>
     </footer>
-
     <!-- End Of Section -->
+
+
     <script src="main.js"></script>
 </body>
 </html>
